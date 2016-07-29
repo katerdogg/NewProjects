@@ -38,7 +38,7 @@ when "update"
 		puts movies
 	end
 when "display"
-	puts "Movie!"
+	movies.each {|movie, rating| puts "Movie: #{movie} Rating: #{rating}"}
 when "delete"
 	puts "Deleted!"
 else
