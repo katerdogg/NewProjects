@@ -50,7 +50,6 @@ def divisible_by_two()
 	my_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 	my_array.each {|number| puts number if number % 2 == 0}
-
 end
 
 # Up the Down Staircase
@@ -60,12 +59,30 @@ def upto_downto
 	100.downto(95) { |number| puts number}
 end 
 
+# Call and Response
 def respond_to
 	age = 26
-
 	age.respond_to(:next)
 end 
 
+# Concatenation Operator
+def concat_op
+	alphabet = ["a", "b", "c", "d"]
+	alphabet << "e"
 
+	caption = "Harry Potter loved "
+	caption << "Ginny Weasley!"
 
+	puts alphabet
+	puts caption
+end
+
+def string_interpolation
+	favorite_names = ["Henry", "Rosalind", "Oliver"]
+	favorite_names.each do |name|
+	puts "A great name: #{name}"
+	end
+end
+
+string_interpolation()
 
