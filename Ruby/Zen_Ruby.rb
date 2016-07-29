@@ -84,5 +84,7 @@ def string_interpolation
 	end
 end
 
-string_interpolation()
+def times_loop
+	3.times {|number| puts "I will print out three times!"}
+end
 
