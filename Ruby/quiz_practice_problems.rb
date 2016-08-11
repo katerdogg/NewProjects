@@ -99,5 +99,13 @@ def ruby_tools
 		tool[0] == "r"
 	end
 end
-ruby_tools()
 
+# Create a new array with all elements from an array that contain th
+# 	contain the letter "a"
+def captain_planet
+	captain_planet = ["earth", "fire", "wind", "water"]
+
+	captain_planet.select do |word|
+		word.include?("a")
+	end
+end
