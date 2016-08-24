@@ -61,6 +61,49 @@ def person
 	puts hash
 end
 
+# 4
 merge_hash = { 'a' => 100, 'b' => 200 }.merge({ 'b' => 300 })
 
 puts merge_hash
+
+
+# Exercises from 4.4.1 Constructors
+
+def range_constructors
+
+	range_1 = 0..9
+	puts range_1
+	range_2 = Range.new(0,9)
+	puts range_2
+
+	if range_1 == range_2
+		puts "They are equal!"
+	else 
+		puts "They are not equal!"
+	end
+end
+
+# Exercises from 4.4.3
+
+# 1
+
+def palindrome(string)
+
+	if string == string.reverse
+		puts "#{string} is a palindrome!"
+	else
+		puts "#{string} is not a palindrome!"
+	end
+end
+
+# palindrome("hello")
+
+# 2
+
+class String
+	def shuffle
+		split('').to_a.shuffle.join
+	end
+end
+
+puts "foobar".shuffle
